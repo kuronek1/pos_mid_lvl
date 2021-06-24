@@ -2,3 +2,62 @@
     margin: 0;
     padding: 0;
 }
+
+body {
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+.section {
+    display: flex;
+    padding: 20px;
+    height: 98vh;
+}
+
+.card_1, .card_2, .card_3 {
+    position: relative;
+    display: block;
+    width: 30%;
+    height: 20%;
+
+    margin: 10px 20px;
+
+    border: 1px solid black;
+    border-radius: 10px;
+
+    color: white;
+    font-weight: bold;
+}
+.card_1 {
+    background: linear-gradient(45deg,#FFBD9A, #FD8898);
+}
+
+.card_2 {
+    background: linear-gradient(45deg,#87C6F5, #1D93E3);
+}
+
+.card_3 {
+    background: linear-gradient(45deg,#77D8CF, #09D0B7);
+}
+
+.title_card, .money, .persent {
+    position: absolute;
+}
+
+.title_card {
+    top: 20%;
+    left: 10%;
+}
+
+.money {
+    top: 40%;
+    left: 10%;
+    font-size: 35px;
+}
+
+.persent {
+    bottom: 20%;
+    left: 10%;
+    font-size: 20px;
+
+}
