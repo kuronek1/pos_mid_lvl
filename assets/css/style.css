@@ -61,3 +61,36 @@ body {
     font-size: 20px;
 
 }
+
+.mark {
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+
+
+.dot {
+    position: absolute;
+    bottom: -25%;
+    right: -5%;
+
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+.dot2 {
+    position: absolute;
+    top: -10%;
+    right: -20%;
+
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
