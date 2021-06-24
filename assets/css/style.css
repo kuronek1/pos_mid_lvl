@@ -9,7 +9,7 @@ body {
 }
 
 .section {
-    display: block;
+    display: inline-block;
     padding: 20px;
     height: 98vh;
 }
@@ -42,7 +42,13 @@ body {
     background: linear-gradient(45deg,#77D8CF, #09D0B7);
 }
 
-.title_card, .money, .persent {
+.card:hover {
+    cursor: pointer;
+    transition: border 0.2s;
+    border: 3px solid red;
+}
+
+.title_card, .money, .persent, .mark, .dot, .dot2 {
     position: absolute;
 }
 
@@ -64,43 +70,27 @@ body {
 }
 
 .mark {
-    position: absolute;
     right: 10%;
     top: 20%;
 }
 
+
+
 .dot {
-    position: absolute;
     bottom: -50%;
     right: -10%;
-
-    height: 200px;
-    width: 200px;
-    background-color: white;
-    border-radius: 50%;
-    display: inline-block;
-    opacity: 0.3;
 }
 
 .dot2 {
-    position: absolute;
     top: -10%;
     right: -35%;
+}
 
+.dot, .dot2 {
     height: 200px;
     width: 200px;
     background-color: white;
     border-radius: 50%;
     display: inline-block;
     opacity: 0.3;
-}
-
-.card {
-    position: relative;
-    top: 0;
-}
-.card:hover {
-    cursor: pointer;
-    transition: padding 2s;
-    padding: 10px;
 }
