@@ -9,16 +9,16 @@ body {
 }
 
 .section {
-    display: flex;
+    display: block;
     padding: 20px;
     height: 98vh;
 }
 
 .card_1, .card_2, .card_3 {
     position: relative;
-    display: block;
-    width: 30%;
-    height: 20%;
+    display: inline-block;
+    width: 350px;
+    height: 200px;
 
     margin: 10px 20px;
 
@@ -56,10 +56,9 @@ body {
 }
 
 .persent {
+    font-size: 15px;
     bottom: 20%;
     left: 10%;
-    font-size: 20px;
-
 }
 
 .mark {
@@ -71,26 +70,26 @@ body {
 
 .dot {
     position: absolute;
-    bottom: -25%;
-    right: -5%;
+    bottom: -50%;
+    right: -10%;
 
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     background-color: white;
     border-radius: 50%;
     display: inline-block;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 .dot2 {
     position: absolute;
     top: -10%;
-    right: -20%;
+    right: -35%;
 
-    height: 150px;
-    width: 150px;
+    height: 200px;
+    width: 200px;
     background-color: white;
     border-radius: 50%;
     display: inline-block;
-    opacity: 0.5;
+    opacity: 0.3;
 }
