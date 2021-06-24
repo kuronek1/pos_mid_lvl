@@ -19,6 +19,7 @@ body {
     display: inline-block;
     width: 350px;
     height: 200px;
+    overflow: hidden;
 
     margin: 10px 20px;
 
@@ -27,6 +28,7 @@ body {
 
     color: white;
     font-weight: bold;
+    user-select: none;
 }
 .card_1 {
     background: linear-gradient(45deg,#FFBD9A, #FD8898);
@@ -67,7 +69,6 @@ body {
     top: 20%;
 }
 
-
 .dot {
     position: absolute;
     bottom: -50%;
@@ -92,4 +93,14 @@ body {
     border-radius: 50%;
     display: inline-block;
     opacity: 0.3;
+}
+
+.card {
+    position: relative;
+    top: 0;
+}
+.card:hover {
+    cursor: pointer;
+    transition: padding 2s;
+    padding: 10px;
 }
