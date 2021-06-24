@@ -76,19 +76,30 @@ body {
 
 
 
-.dot {
+.card::after,card {
+    position: absolute;
     bottom: -50%;
     right: -10%;
-}
-
-.dot2 {
-    top: -10%;
-    right: -35%;
-}
-
-.dot, .dot2 {
     height: 200px;
     width: 200px;
+
+    content: " ";
+
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.3;
+}
+
+.card::before {
+    position: absolute;
+    top: -10%;
+    right: -35%;
+    height: 200px;
+    width: 200px;
+
+    content: " ";
+
     background-color: white;
     border-radius: 50%;
     display: inline-block;
